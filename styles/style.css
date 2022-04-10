@@ -39,12 +39,14 @@ img {
     padding-right: 15px;
     margin: 0 auto;
     
+   
+    
 }
 /* --------------HEADER------------ */
 
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top:32px ;
+    margin-bottom: 32px;
 }
 .header-logo-black {
     font-family: 'Raleway';
@@ -70,9 +72,11 @@ color: var(--second-btn-color);
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
+    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
     color: var(--first-btn-color)
+    
 }
 
 .header-link {
@@ -83,19 +87,6 @@ color: var(--second-btn-color);
     color: var(--first-title-color);
 }
 
-.header-item {
-    display: flex;
-    margin-left: 93px;
-}
-.header-list, .header-item, .header-tel,
-.header-mailto .header-item {
-    display: flex;
-    margin-left: 50px;
-}
-.header-nav {
-    display: flex;
-    align-items: center;
-}
 .header-link-another {
     font-weight: 500;
     font-size: 14px;
@@ -104,8 +95,23 @@ color: var(--second-btn-color);
     color: var(--first-btn-color);
 }
 
-
-
+.header-content, .header-list {
+    display: flex;
+}
+ .container-header, .header-nav {
+    display: flex;
+    align-items: center;
+    
+}
+.header-contacts {
+    margin-left: auto;
+}
+.header-mailto {
+    margin-right: 50px;
+}
+.header-item {
+    margin-right: 50px;
+}
 
 .header-link:hover,
 .header-link:focus,
@@ -119,8 +125,6 @@ color: var(--second-btn-color);
 
 .header-tel,
 .header-mailto {
- 
-   
     
     font-weight: 500;
     font-size: 14px;
@@ -129,12 +133,8 @@ color: var(--second-btn-color);
     color: var(--second-title-color);
     
 }
-.header-content,
-.header-contacts {
-display: flex;
-margin-left: auto;
 
-}
+
 
 
 
@@ -163,9 +163,8 @@ margin-left: auto;
 /* ------------------SELECTION-ONE------------ */
 
 .selection-title {
-width: 696px;
-margin: 0 auto 30px;
-
+    width: 696px;
+    margin: 0 auto 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -194,25 +193,31 @@ min-width: 200px;
 display: block;
 margin: 0 auto;
 
-    color: var(--second-btn-color);
-    background-color: var(--first-btn-color);
+color: var(--second-btn-color);
+background-color: var(--first-btn-color);
     
 }
 
 .btn-list
 {
-    color: var(--first-title-color);
+    
+color: var(--first-title-color);
 background-color: #F5F4FA;
 }
 .selection-one {
+
 padding-top: 200px;
 padding-bottom: 280px;
-    background-color: var(--background-color)
+background-color: var(--background-color)
 }
 
 /* ------------------SELECTION-TWO------------ */
 
 .hero-title {
+    
+ margin-top: 0px;
+   margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -221,19 +226,53 @@ padding-bottom: 280px;
     color: var(--first-title-color);
 }
 
-
-
 .hero-text {
-    
+  
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
 }
+.hero-item {
+
+    width: 270px;
+    
+}
+.selection-two {
+   
+   margin-top: 94px;
+   margin-bottom: 94px;
+   
+}
+.hero-list {
+    
+    display: flex; 
+}
+.hero-item:not(:last-child) {
+margin-right: 30px;
+}
+
+
+
+
+
+
 
 /* ------------------SELECTION-THREE------------ */
 
+
+
+
+.selection-three {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 .headline {
+    
+    margin-top: 0px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -243,17 +282,73 @@ padding-bottom: 280px;
     color: var(--first-title-color);
 }
 
+
+.list-photo:not(:last-child) {
+    
+    margin-right: 30px;
+}
+.photo {
+    
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------SELECTION-FOUR------------ */
+
+.headline-four {
+    
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    
+    letter-spacing: 0.03em;
+    color: var(--first-title-color);
+}
+
+.subtitle-list {
+    margin-bottom: 94px;
+     display: flex; 
+}
+.subtitle-icon:not(:last-child) {
+    margin-right: 30px;
+    
+}
+
+.div-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
 .headline-one
 {
+     
     background-color: var(--background-color-next);
 }
 
 .subtitle-icon {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     width: 270px;
     background-color: var(--second-btn-color);
 }
 .subtitle {
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -272,22 +367,44 @@ padding-bottom: 280px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------FOOTER------------ */
 
 .footer {
-
+padding-top: 60px;
+padding-bottom: 60px;
     background-color: var(--background-color)
 }
 
-.footer-item {
+
+.footer-items, .footer-item:not(:last-child)
+{margin-bottom: 9px;
+
+}
+
+.footer-item  {
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-btn-color);
 }
-
+.footer-items {
+    padding-top: 20px;
+}
 .footer-mailto {
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -324,6 +441,7 @@ padding-bottom: 280px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    padding: 6px 22px;
     background-color: var(--first-btn-color);
     color: var(--second-btn-color);
 }
@@ -340,6 +458,7 @@ padding-bottom: 280px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    padding: 6px 22px;
     color: var(--first-title-color);
 }
 .btn-list:hover,
@@ -348,9 +467,44 @@ padding-bottom: 280px;
     color: var(--second-btn-color);
 }
 
+
+.btn-item, .btn-items + .btn-items {
+    margin-left: 8px;
+}
+
+
+.btn-item {
+    
+    margin-top: 0;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+.main-style {
+justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+   
+}
+.main-heading{
+     margin-bottom: 30px;
+width: 370px;
+border: 1px solid #EEEEEE;
+
+}
+
 /* ------------------SELECTION-PORTFOLIO---one------------ */
+.section-portfolio {
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+}
 
 .main-title {
+    padding-top: 20px;
+    padding-bottom: 8px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -359,6 +513,7 @@ padding-bottom: 280px;
 }
 
 .main-text {
+    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
